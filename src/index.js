@@ -10,7 +10,10 @@ WebFont.load({
       "sans-serif",
       "Karla:300,400,500,700.700i",
       "PT Sans",
-      "Righteous"
+      "Righteous",
+      "Patua One",
+      "Hind:300",
+      "Permanent Marker"
     ]
   }
 });
