@@ -17,6 +17,7 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
+    "scroll-snap": "^2.0.4",
     "semantic-ui-react": "^0.87.1",
     "webfontloader": "^1.6.28"
   },

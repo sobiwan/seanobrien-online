@@ -1,0 +1,75 @@
+.home-left-sticky {
+  width: 35vw;
+  min-width: 350px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: left;
+}
+
+.left-sticky-content-container {
+  max-width: 270px;
+  padding: 10vh 0;
+}
+
+.left-sticky-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3.2em;
+  margin-left: -40px;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+.tagline-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 240px;
+}
+
+.tagline-text {
+  font-family: "Patua One";
+  font-size: 2.2em;
+  text-transform: lowercase;
+  color: #4a4a4a;
+}
+
+.left-sticky-blurb-container {
+  margin-top: 35px;
+}
+
+.blurb-text {
+  font-family: "Hind", sans-serif;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.blurb-text a {
+  color: #3b80fe;
+  text-decoration: none;
+}
+
+.left-sticky-social-container {
+  flex-direction: row;
+  margin-left: -15px;
+}
+
+.social-icon {
+  padding: 0 10px;
+}
+
+.left-sticky-cta-button {
+  margin: 25px 5px;
+  height: 50px;
+  width: 220px;
+  border-radius: 100px;
+  background-color: #3b80fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* FONT */
+  font-family: "Hind", sans-serif;
+  color: #fff;
+}
