@@ -8,9 +8,9 @@ html body {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100vw;
+  overflow-y: visible;
 }
 
-.home-right-scrollview {
-  width: 65vw;
-  background-color: red;
+::-webkit-scrollbar {
+  display: none;
 }

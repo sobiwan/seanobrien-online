@@ -1,0 +1,23 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  min-width: 500px;
+  height: 100vh;
+}
+
+/* MENU BAR */
+
+.menubar-container {
+  width: 65vw;
+  min-width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menubar-container div {
+  padding: 10px 20px;
+  font-family: "Raleway";
+}

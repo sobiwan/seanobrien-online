@@ -5,12 +5,12 @@ import {
   FaInstagram,
   FaGithub
 } from "react-icons/fa";
-import "./leftsticky.css";
+import "./profile.css";
 
-export default class Home extends React.Component {
+export default class Profile extends React.Component {
   constructor(props) {
     super(props);
-    ReactGA.pageview("/Home");
+    ReactGA.pageview("/Profile");
   }
 
   render() {
@@ -20,13 +20,17 @@ export default class Home extends React.Component {
           <div className="left-sticky-title">
             Sean O'Brien
           </div>
-          <div className="left-sticky-tagline-container">
-            {taglines.map(t => {
+          <div className="left-sticky-social-container">
+            {social.map(s => {
               return (
-                <div className="tagline-container">
-                  <div className="tagline-text">{t.t}</div>
-                  <div className="tagline-text">{t.c}</div>
-                </div>
+                <a
+                  href={s.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
+                  {s.icon}
+                </a>
               );
             })}
           </div>
@@ -59,24 +63,11 @@ export default class Home extends React.Component {
               >
                 @IrishBeef
               </a>
-              . Follow my work, interest and accomplishments
-              below.
+              . Follow my work, interests and
+              accomplishments here on my page!
             </div>
           </div>
-          <div className="left-sticky-social-container">
-            {social.map(s => {
-              return (
-                <a
-                  href={s.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-icon"
-                >
-                  {s.icon}
-                </a>
-              );
-            })}
-          </div>
+
           <div className="left-sticky-cta-continaer">
             <div className="left-sticky-cta-button">
               Say Hello!
@@ -90,16 +81,16 @@ export default class Home extends React.Component {
 
 const taglines = [
   {
-    t: "Tech.",
-    c: "Cooking."
+    t: "Entrepreneur",
+    c: "Cooking"
   },
   {
-    t: "Travel.",
-    c: "Coding."
+    t: "Programmer",
+    c: "Coding"
   },
   {
-    t: "Techno.",
-    c: "Culture."
+    t: "& Gourmand",
+    c: "Culture"
   }
 ];
 

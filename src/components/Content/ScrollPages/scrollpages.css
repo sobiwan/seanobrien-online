@@ -1,0 +1,16 @@
+.starting-view-container {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    #f4b93d,
+    #f4b93d
+  );
+  position: relative;
+}
+
+#sean-menu-image {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 60%;
+}

@@ -1,15 +1,16 @@
 import React from "react";
 import ScrollSnap from "scroll-snap";
-import "./main.css";
-import LeftSticky from "../LeftSticky";
+import "./content.css";
+import Profile from "../Profile";
+import StartView from "./ScrollPages/StartView";
 
 const snapConfig = {
-  scrollSnapDestination: "0% 110%",
+  scrollSnapDestination: "0% 106%",
   scrollTimeout: 100,
   scrollTime: 300
 };
 
-export default class MainContainer extends React.Component {
+export default class Content extends React.Component {
   container = React.createRef();
 
   bindScrollSnap() {
@@ -29,9 +30,9 @@ export default class MainContainer extends React.Component {
   render() {
     return (
       <div id="container" ref={this.container}>
-        <LeftSticky />
-        <LeftSticky />
-        <LeftSticky />
+        <StartView />
+        <Profile />
+        <Profile />
       </div>
     );
   }

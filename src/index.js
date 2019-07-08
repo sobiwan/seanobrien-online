@@ -13,7 +13,8 @@ WebFont.load({
       "Righteous",
       "Patua One",
       "Hind:300",
-      "Permanent Marker"
+      "Permanent Marker",
+      "Raleway"
     ]
   }
 });
