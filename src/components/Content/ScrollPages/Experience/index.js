@@ -1,20 +1,12 @@
 import React, { useState } from "react";
-import Menubar from "../../Menubar";
-import {
-  FaWindowClose,
-  FaMapMarkerAlt,
-  FaBuilding,
-  FaHome,
-  FaMobileAlt,
-  FaDonate,
-  FaShoppingBasket,
-  FaFacebook,
-  FaGraduationCap
-} from "react-icons/fa";
-import Mavely from "../../../../resources/images/mavely.png";
-import MavelyIphone from "../../../../resources/images/mavely_screenshot.png";
-import Swyft from "../../../../resources/images/swyft.png";
+import { FaWindowClose } from "react-icons/fa";
 import IrishBeef from "../../../../resources/images/irishbeef.png";
+import Mavely from "../../../../resources/images/mavely.png";
+import Swyft from "../../../../resources/images/swyft.png";
+import Menubar from "../../Menubar";
+import mavelyContent from "./experience-data/mavely-content";
+import swyftContent from "./experience-data/swyft-content";
+import irishbeefContent from "./experience-data/irishbeef-content";
 import "./experience.css";
 
 export default function Experience() {
@@ -22,7 +14,6 @@ export default function Experience() {
   const [showMavely, setShowMavely] = useState(false);
   const [showSwyft, setShowSwyft] = useState(false);
   const [showIrishBeef, setShowIrishBeef] = useState(false);
-  const states = { showMavely, showSwyft, showIrishBeef };
   const statesChange = {
     setShowMenu,
     setShowMavely,
@@ -32,45 +23,34 @@ export default function Experience() {
   return (
     <div className="experience-container">
       <Menubar />
-      {showMenu && (
-        <ExperienceMenu
-          states={states}
-          change={statesChange}
+      {showMenu && <ExperienceMenu change={statesChange} />}
+      {showMavely && (
+        <ExperienceDetail
+          setMenu={setShowMenu}
+          setDetail={setShowMavely}
+          content={mavelyContent}
         />
       )}
-      {showMavely && (
-        <MavelyView states={states} change={statesChange} />
-      )}
       {showSwyft && (
-        <div
-          onClick={() => {
-            setShowSwyft(false);
-            setShowMenu(true);
-          }}
-        >
-          <div>Swyft</div>
-          <div>close</div>
-        </div>
+        <ExperienceDetail
+          setMenu={setShowMenu}
+          setDetail={setShowSwyft}
+          content={swyftContent}
+        />
       )}
       {showIrishBeef && (
-        <div>
-          <div>IrishBeef</div>
-          <div
-            onClick={() => {
-              setShowIrishBeef(false);
-              setShowMenu(true);
-            }}
-          >
-            close
-          </div>
-        </div>
+        <ExperienceDetail
+          setMenu={setShowMenu}
+          setDetail={setShowIrishBeef}
+          content={irishbeefContent}
+        />
       )}
       <div />
     </div>
   );
 }
 
-const ExperienceMenu = ({ states, change }) => (
+const ExperienceMenu = ({ change }) => (
   <div className="experience-company-container">
     <div
       className="logo-clickable"
@@ -110,34 +90,35 @@ const ExperienceMenu = ({ states, change }) => (
   </div>
 );
 
-const MavelyView = ({ states, change }) => (
-  <div className="mavelyview-container">
-    <div className="mavelyview-header">
+const ExperienceDetail = ({
+  setMenu,
+  setDetail,
+  content
+}) => (
+  <div className="detail-container">
+    <div className="detail-header">
       <img
-        className="mavelyview-logo"
-        alt="mavely"
-        src={Mavely}
+        className="detail-logo"
+        alt={`${content.name} logo`}
+        src={content.logo}
       />
       <div
         onClick={() => {
-          change.setShowMavely(false);
-          change.setShowMenu(true);
+          setMenu(true);
+          setDetail(false);
         }}
         style={{ alignItems: "center", paddingRight: 30 }}
       >
-        <FaWindowClose color="#ea1852" size="2em" />
+        <FaWindowClose color={content.color} size="2em" />
       </div>
     </div>
-    <div className="mavelyview-body">
+    <div className="detail-body">
       <div className="body-leftgutter">
         <div className="leftgutter-text">
-          Solving the issue of rising customer acquisition
-          costs for brands while driving consumer product
-          discover and additional income for everyday
-          families.
+          {content.leftgutterText}
         </div>
         <div className="leftgutter-icons-container">
-          {MavelyIcons.map(item => {
+          {content.icons.map(item => {
             return (
               <div className="icons-item">
                 <div>{item.icon}</div>
@@ -150,10 +131,10 @@ const MavelyView = ({ states, change }) => (
         </div>
         <div className="leftgutter-learn-more-container">
           <div className="learn-more-title">
-            Explore more about Mavely...
+            {` Explore more about ${content.name}...`}
           </div>
           <div className="learn-more-links-container">
-            {MavelyLinks.map(item => {
+            {content.links.map(item => {
               return (
                 <a
                   className="icons-item"
@@ -170,49 +151,11 @@ const MavelyView = ({ states, change }) => (
       </div>
       <div className="body-rightgutter-image">
         <img
-          className="mavelyview-screenshot"
+          className="detail-screenshot"
           alt="mavely_screenshot"
-          src={MavelyIphone}
+          src={content.rightGutterImage}
         />
       </div>
     </div>
   </div>
 );
-
-const MavelyIcons = [
-  {
-    icon: <FaMapMarkerAlt color="#ea1852" size="2em" />,
-    text: "Founded June 2018"
-  },
-  {
-    icon: <FaBuilding color="#ea1852" size="2em" />,
-    text: "Offices in Chicago, IL"
-  },
-  // {
-  //   icon: <FaDonate color="#ea1852" size="2em" />,
-  //   text: "Funded by Pivot North"
-  // },
-  {
-    icon: <FaShoppingBasket color="#ea1852" size="2em" />,
-    text: "Shopping Re-Defined"
-  }
-];
-
-const MavelyLinks = [
-  {
-    icon: <FaHome color="#ea1852" size="2em" />,
-    link: "https://mavely.life"
-  },
-  {
-    icon: <FaMobileAlt color="#ea1852" size="2em" />,
-    link: "https://mavely.life/download"
-  },
-  {
-    icon: <FaFacebook color="#ea1852" size="2em" />,
-    link: "https://www.facebook.com/MavelyApp/"
-  },
-  {
-    icon: <FaGraduationCap color="#ea1852" size="2em" />,
-    link: "https://learn.mavely.life/"
-  }
-];
