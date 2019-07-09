@@ -12,7 +12,7 @@ WebFont.load({
       "PT Sans",
       "Righteous",
       "Patua One",
-      "Hind:300",
+      "Hind:300,400, 600, 700",
       "Permanent Marker",
       "Raleway"
     ]

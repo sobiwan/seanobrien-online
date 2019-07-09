@@ -1,0 +1,98 @@
+/* MENU VIEW */
+
+.experience-container {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #eabad8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience-company-container {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 65vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-clickable {
+  width: 25%;
+}
+
+.menu-logo {
+  max-width: 100%;
+}
+
+/* MAVELY VIEW */
+
+.mavelyview-container {
+  height: 88vh;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hind", sans-serif;
+}
+
+.mavelyview-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mavelyview-logo {
+  width: 25%;
+}
+
+.mavelyview-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.body-leftgutter {
+  margin: 30px;
+  padding-right: 60px;
+  max-width: 50%;
+}
+
+.body-rightgutter-image {
+  padding: 0 30px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.leftgutter-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  margin: 40px 10px;
+}
+
+.icons-item {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.learn-more-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 40px 10px;
+}
+
+.mavelyview-screenshot {
+  max-height: 70vh;
+}

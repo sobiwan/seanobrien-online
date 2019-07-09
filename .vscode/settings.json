@@ -12,6 +12,9 @@
   "eslint.enable": true,
   "cSpell.words": [
     "afftrack",
-    "lacolombe"
+    "lacolombe",
+    "leftgutter",
+    "mavelyview",
+    "rightgutter"
   ]
 }

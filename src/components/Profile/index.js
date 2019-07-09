@@ -3,7 +3,8 @@ import ReactGA from "react-ga";
 import {
   FaLinkedin,
   FaInstagram,
-  FaGithub
+  FaGithub,
+  FaMedal
 } from "react-icons/fa";
 import "./profile.css";
 
@@ -91,6 +92,11 @@ const social = [
   {
     icon: <FaGithub color="#a7a7a7" size="3em" />,
     link: "https://github.com/sobiwan"
+  },
+  {
+    icon: <FaMedal color="#a7a7a7" size="3em" />,
+    link:
+      "https://www.forbes.com/profile/swyft-media/#298e1dd86f38"
   }
 ];
 
