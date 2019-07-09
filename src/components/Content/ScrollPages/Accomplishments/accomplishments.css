@@ -1,0 +1,45 @@
+.accomplishments-container {
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #005ba9,
+    #005ba9
+  );
+  position: relative;
+}
+
+#accomplishments-seanimage {
+  position: absolute;
+  bottom: 0;
+  left: 15vw;
+  width: 60%;
+}
+
+.accomplishments-grid {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.accomplishments-item {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hind", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffffc5;
+  line-height: 1em;
+}
+
+.accomplishments-image {
+  width: 150px;
+  height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+}

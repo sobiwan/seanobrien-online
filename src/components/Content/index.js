@@ -1,7 +1,9 @@
 import React from "react";
 import "./content.css";
-import StartView from "./ScrollPages/StartView";
+import StartView from "./ScrollPages/StartView/index";
 import Experience from "./ScrollPages/Experience/index";
+import Accomplishments from "./ScrollPages/Accomplishments";
+import Recommendations from "./ScrollPages/Recommendations";
 
 export default class Content extends React.Component {
   render() {
@@ -14,7 +16,10 @@ export default class Content extends React.Component {
           <Experience />
         </span>
         <span>
-          <StartView />
+          <Accomplishments />
+        </span>
+        <span>
+          <Recommendations />
         </span>
       </div>
     );

@@ -6,7 +6,7 @@ export default class Menubar extends React.Component {
     return (
       <div className="menubar-container">
         <div>Experience</div>
-        <div>Accomplishments</div>
+        <div>Honors</div>
         <div>Recommendations</div>
       </div>
     );

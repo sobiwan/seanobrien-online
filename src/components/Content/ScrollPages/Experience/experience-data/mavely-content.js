@@ -29,13 +29,13 @@ export default {
     },
     {
       icon: <FaBuilding color={mavelycolor} size="2em" />,
-      text: "Offices Chicago, IL"
+      text: "Offices Chicago"
     },
     {
       icon: (
         <FaShoppingBasket color={mavelycolor} size="2em" />
       ),
-      text: "Shopping Re-Defined"
+      text: "Shopping ReDefined"
     }
   ],
   links: [

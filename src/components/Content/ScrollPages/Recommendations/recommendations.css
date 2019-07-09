@@ -1,0 +1,41 @@
+.recommendations-container {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    #b4ddbf,
+    #b4ddbf
+  );
+  position: relative;
+}
+
+.recs-header {
+  margin: 0 30px;
+  font-family: "Hind";
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.grid-item {
+  width: 40%;
+  margin: 20px 10px;
+  font-family: "Hind";
+}
+
+.rec-title {
+  border-bottom: #333 solid 0.5px;
+  font-size: 1.3em;
+  margin-bottom: 7px;
+}
+
+.item-name {
+  text-decoration: none;
+  color: #7a7676;
+}

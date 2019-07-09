@@ -45,7 +45,9 @@ export default function Experience() {
           content={irishbeefContent}
         />
       )}
-      <div />
+      <div className="experience-footer">
+        {showMenu && "click into the logos for more detail"}
+      </div>
     </div>
   );
 }

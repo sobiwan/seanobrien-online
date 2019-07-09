@@ -11,11 +11,14 @@
   "prettier.eslintIntegration": true,
   "eslint.enable": true,
   "cSpell.words": [
+    "Equicorp",
     "afftrack",
+    "irishbeef",
     "lacolombe",
     "leftgutter",
     "mavelycolor",
     "mavelyview",
+    "noreferrer",
     "rightgutter",
     "swyftcolor"
   ]
