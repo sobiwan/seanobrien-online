@@ -1,4 +1,6 @@
 import React from "react";
+import Bounce from "react-reveal/Bounce";
+import Flip from "react-reveal/Flip";
 import Menubar from "../../Menubar";
 import Sean from "../../../../resources/images/accomplishments-sean.png";
 import Forbes from "../../../../resources/images/30-under-30-image.png";
@@ -10,31 +12,35 @@ import "./accomplishments.css";
 export default () => (
   <div className="accomplishments-container">
     <Menubar />
+
     <img
       id="accomplishments-seanimage"
       alt="sean"
       src={Sean}
     />
+
     <div className="accomplishments-grid">
       {accomplishmentItems.map(item => {
         return (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="accomplishments-item"
-            style={
-              item.margin && { marginTop: item.margin }
-            }
-          >
-            <div
-              className="accomplishments-image"
-              style={{
-                backgroundImage: `url(${item.image})`
-              }}
-            />
-            <div>{item.text}</div>
-          </a>
+          <Bounce bottom>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="accomplishments-item"
+              style={
+                item.margin && { marginTop: item.margin }
+              }
+            >
+              <div
+                className="accomplishments-image"
+                style={{
+                  backgroundImage: `url(${item.image})`
+                }}
+              />
+              <div>{item.text}</div>
+            </a>
+          </Bounce>
         );
       })}
     </div>
