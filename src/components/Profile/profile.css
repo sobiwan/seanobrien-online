@@ -22,21 +22,6 @@
   width: 400px;
 }
 
-.tagline-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 300px;
-}
-
-.tagline-text {
-  font-family: "Patua One";
-  font-size: 2.2em;
-  text-transform: lowercase;
-  color: #4a4a4a;
-  padding-right: 3px;
-}
-
 .left-sticky-blurb-container {
   margin-top: 35px;
 }

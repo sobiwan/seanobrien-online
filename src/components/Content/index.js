@@ -3,9 +3,10 @@ import ScrollSnap from "scroll-snap";
 import "./content.css";
 import Profile from "../Profile";
 import StartView from "./ScrollPages/StartView";
+import Experience from "./ScrollPages/Experience";
 
 const snapConfig = {
-  scrollSnapDestination: "0% 106%",
+  scrollSnapDestination: "0% 100%",
   scrollTimeout: 100,
   scrollTime: 300
 };
@@ -31,7 +32,7 @@ export default class Content extends React.Component {
     return (
       <div id="container" ref={this.container}>
         <StartView />
-        <Profile />
+        <Experience />
         <Profile />
       </div>
     );

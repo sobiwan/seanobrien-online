@@ -1,7 +1,7 @@
 import React from "react";
 import ReactGA from "react-ga";
 import Menubar from "../Menubar";
-import Sean from "../../../resources/imgaes/sean-menu-photo.png";
+import Sean from "../../../resources/images/sean-menu-photo.png";
 import "./scrollpages.css";
 
 export default class StartView extends React.Component {

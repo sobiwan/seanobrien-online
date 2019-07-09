@@ -79,21 +79,6 @@ export default class Profile extends React.Component {
   }
 }
 
-const taglines = [
-  {
-    t: "Entrepreneur",
-    c: "Cooking"
-  },
-  {
-    t: "Programmer",
-    c: "Coding"
-  },
-  {
-    t: "& Gourmand",
-    c: "Culture"
-  }
-];
-
 const social = [
   {
     icon: <FaLinkedin color="#a7a7a7" size="3em" />,
