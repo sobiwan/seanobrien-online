@@ -8,8 +8,14 @@ import Marketers from "../../../../resources/images/markersmatter-image.png";
 import Miller from "../../../../resources/images/mltf-logo.png";
 import "./accomplishments.css";
 
-export default () => (
-  <div className="accomplishments-container">
+export default ({ breakPoint }) => (
+  <div
+    className={
+      breakPoint
+        ? "accomplishments-container break-ac"
+        : "accomplishments-container full-ac"
+    }
+  >
     <Menubar />
 
     <img

@@ -1,12 +1,18 @@
 .accomplishments-container {
-  height: 100%;
-  height: 100%;
   background-image: linear-gradient(
     180deg,
     #005ba9,
     #005ba9
   );
   position: relative;
+}
+
+.full-ac {
+  min-height: 100vh;
+}
+
+.break-ac {
+  height: 70vh;
 }
 
 #accomplishments-seanimage {

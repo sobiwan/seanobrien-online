@@ -14,28 +14,22 @@ export default class Content extends React.Component {
           breakPoint ? "container break" : "container full"
         }
       >
-        <span
-          style={
-            breakPoint
-              ? { minHeight: "50vh" }
-              : { minHeight: "100vh" }
-          }
-        >
-          <StartView />
+        <span>
+          {!breakPoint && (
+            <StartView
+              breakPoint={breakPoint ? true : false}
+            />
+          )}
         </span>
         <span>
           <Experience
             breakPoint={breakPoint ? true : false}
           />
         </span>
-        <span
-          style={
-            breakPoint
-              ? { minHeight: "70vh" }
-              : { minHeight: "100vh" }
-          }
-        >
-          <Accomplishments />
+        <span>
+          <Accomplishments
+            breakPoint={breakPoint ? true : false}
+          />
         </span>
         <span>
           <Recommendations />

@@ -1,6 +1,7 @@
 html body {
   margin: 0 !important;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .home-container {

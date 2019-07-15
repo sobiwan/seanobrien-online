@@ -1,11 +1,17 @@
 .starting-view-container {
-  height: 100%;
   background-image: linear-gradient(
     180deg,
     #f4b93d,
     #f4b93d
   );
   position: relative;
+}
+.break-scv {
+  height: 100%;
+}
+.full-scv {
+  height: 100%;
+  min-height: 100vh;
 }
 
 #sean-menu-image {
