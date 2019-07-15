@@ -13,7 +13,7 @@ import swyftContent from "./experience-data/swyft-content";
 import irishbeefContent from "./experience-data/irishbeef-content";
 import "./experience.css";
 
-export default function Experience() {
+export default function Experience(props) {
   const [showMenu, setShowMenu] = useState(true);
   const [showMavely, setShowMavely] = useState(false);
   const [showSwyft, setShowSwyft] = useState(false);
@@ -25,12 +25,16 @@ export default function Experience() {
     setShowIrishBeef
   };
   return (
-    <div className="experience-container">
+    <div
+      style={props.breakPoint ? { height: "100%" } : null}
+      className="experience-container"
+    >
       <Menubar />
       {showMenu && (
         <ExperienceMenu
           showMenu={showMenu}
           change={statesChange}
+          breakPoint={props.breakPoint}
         />
       )}
       {showMavely && (
@@ -38,6 +42,7 @@ export default function Experience() {
           setMenu={setShowMenu}
           setDetail={setShowMavely}
           content={mavelyContent}
+          breakPoint={props.breakPoint}
         />
       )}
       {showSwyft && (
@@ -45,6 +50,7 @@ export default function Experience() {
           setMenu={setShowMenu}
           setDetail={setShowSwyft}
           content={swyftContent}
+          breakPoint={props.breakPoint}
         />
       )}
       {showIrishBeef && (
@@ -52,6 +58,7 @@ export default function Experience() {
           setMenu={setShowMenu}
           setDetail={setShowIrishBeef}
           content={irishbeefContent}
+          breakPoint={props.breakPoint}
         />
       )}
       <div className="experience-footer">
@@ -61,8 +68,18 @@ export default function Experience() {
   );
 }
 
-const ExperienceMenu = ({ change, showMenu }) => (
-  <div className="experience-company-container">
+const ExperienceMenu = ({
+  breakPoint,
+  change,
+  showMenu
+}) => (
+  <div
+    className={
+      breakPoint
+        ? "experience-company-container break-ecc"
+        : "experience-company-container full-ecc"
+    }
+  >
     <Flip top cascade>
       <div
         className="logo-clickable"
@@ -110,7 +127,8 @@ const ExperienceMenu = ({ change, showMenu }) => (
 const ExperienceDetail = ({
   setMenu,
   setDetail,
-  content
+  content,
+  breakPoint
 }) => (
   <div className="detail-container">
     <div className="detail-header">
@@ -131,8 +149,20 @@ const ExperienceDetail = ({
         <FaWindowClose color={content.color} size="2em" />
       </div>
     </div>
-    <div className="detail-body">
-      <div className="body-leftgutter">
+    <div
+      className={
+        breakPoint
+          ? "detail-body break-db"
+          : "detail-body full-db"
+      }
+    >
+      <div
+        className={
+          breakPoint
+            ? "body-leftgutter break-bl"
+            : "body-leftgutter full-bl"
+        }
+      >
         <Fade left>
           <div className="leftgutter-text">
             {content.leftgutterText}
@@ -176,15 +206,17 @@ const ExperienceDetail = ({
           </div>
         </div>
       </div>
-      <div className="body-rightgutter-image">
+      {!breakPoint && (
         <Flip right>
-          <img
+          <div
             className="detail-screenshot"
             alt="mavely_screenshot"
-            src={content.rightGutterImage}
+            style={{
+              backgroundImage: `url(${content.rightGutterImage})`
+            }}
           />
         </Flip>
-      </div>
+      )}
     </div>
   </div>
 );

@@ -19,7 +19,7 @@ export default {
   logo: Mavely,
   color: mavelycolor,
   leftgutterText:
-    "The first and largest emoji content network driving brand awareness and digital licensing revenue for the worlds top brands such as Disney, Universal, NFL, Starbucks and more. Swyft pioneered native brand engagement in the mobile messaging market.",
+    "Solving the issue of rising customer acquisition costs for brands while driving consumer product discover and additional income for everyday families.",
   icons: [
     {
       icon: (

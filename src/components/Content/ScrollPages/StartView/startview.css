@@ -1,5 +1,5 @@
 .starting-view-container {
-  min-height: 100vh;
+  height: 100%;
   background-image: linear-gradient(
     180deg,
     #f4b93d,

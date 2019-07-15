@@ -1,6 +1,5 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
-import Flip from "react-reveal/Flip";
 import Menubar from "../../Menubar";
 import Sean from "../../../../resources/images/accomplishments-sean.png";
 import Forbes from "../../../../resources/images/30-under-30-image.png";

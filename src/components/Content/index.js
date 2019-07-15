@@ -7,15 +7,34 @@ import Recommendations from "./ScrollPages/Recommendations";
 
 export default class Content extends React.Component {
   render() {
+    const { breakPoint } = this.props;
     return (
-      <div className="container">
-        <span>
+      <div
+        className={
+          breakPoint ? "container break" : "container full"
+        }
+      >
+        <span
+          style={
+            breakPoint
+              ? { minHeight: "50vh" }
+              : { minHeight: "100vh" }
+          }
+        >
           <StartView />
         </span>
         <span>
-          <Experience />
+          <Experience
+            breakPoint={breakPoint ? true : false}
+          />
         </span>
-        <span>
+        <span
+          style={
+            breakPoint
+              ? { minHeight: "70vh" }
+              : { minHeight: "100vh" }
+          }
+        >
           <Accomplishments />
         </span>
         <span>

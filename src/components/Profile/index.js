@@ -15,8 +15,14 @@ export default class Profile extends React.Component {
   }
 
   render() {
+    const { width } = this.props.styles;
+    console.log(width);
+
     return (
-      <div className="home-left-sticky">
+      <div
+        style={{ width: width }}
+        className="home-left-sticky"
+      >
         <div className="left-sticky-content-container">
           <div className="left-sticky-title">
             Sean O'Brien
