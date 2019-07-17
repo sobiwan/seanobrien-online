@@ -1,9 +1,10 @@
 import React from "react";
+import SeanFaves from "./recomendations-data";
 import "./recommendations.css";
 
 export default () => (
   <div className="recommendations-container">
-    <div />
+    <div className="header-rec">Some Recommendations</div>
     <div className="recs-content-container">
       <div className="recs-header">
         These are few of my favorite things ...
@@ -56,106 +57,3 @@ const GridItem = ({ link, name }) => (
     <div>{name}</div>
   </a>
 );
-
-const SeanFaves = {
-  wine: [
-    {
-      category: "Wine",
-      name: "Vina Ardanza Reserva 2017 - La Rioja Alta",
-      link:
-        "https://www.vivino.com/la-rioja-alta-vina-ardanza-reserva/w/7973?year=2017"
-    },
-    {
-      category: "Wine",
-      name: "Vina Ardanza Reserva 2017 - La Rioja Alta",
-      link:
-        "https://www.vivino.com/la-rioja-alta-vina-ardanza-reserva/w/7973?year=2017"
-    },
-    {
-      category: "Wine",
-      name: "Vina Ardanza Reserva 2017 - La Rioja Alta",
-      link:
-        "https://www.vivino.com/la-rioja-alta-vina-ardanza-reserva/w/7973?year=2017"
-    },
-    {
-      category: "Wine",
-      name: "Vina Ardanza Reserva 2017 - La Rioja Alta",
-      link:
-        "https://www.vivino.com/la-rioja-alta-vina-ardanza-reserva/w/7973?year=2017"
-    }
-  ],
-  music: [
-    {
-      category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
-      link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
-    },
-    {
-      category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
-      link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
-    },
-    {
-      category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
-      link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
-    },
-    {
-      category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
-      link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
-    }
-  ],
-  recipes: [
-    {
-      category: "Recipes",
-      name: "Eleven-Layer Potato",
-      link:
-        "https://www.foodnetwork.com/recipes/bobby-flay/eleven-layer-potato-gratin-3160636"
-    },
-    {
-      category: "Recipes",
-      name: "Eleven-Layer Potato",
-      link:
-        "https://www.foodnetwork.com/recipes/bobby-flay/eleven-layer-potato-gratin-3160636"
-    },
-    {
-      category: "Recipes",
-      name: "Eleven-Layer Potato",
-      link:
-        "https://www.foodnetwork.com/recipes/bobby-flay/eleven-layer-potato-gratin-3160636"
-    },
-    {
-      category: "Recipes",
-      name: "Eleven-Layer Potato",
-      link:
-        "https://www.foodnetwork.com/recipes/bobby-flay/eleven-layer-potato-gratin-3160636"
-    }
-  ],
-  restaurants: [
-    {
-      category: "Restaurants",
-      name: "Mott St - Chicago IL",
-      link: "https://www.mottstreetchicago.com/"
-    },
-    {
-      category: "Restaurants",
-      name: "Mott St - Chicago IL",
-      link: "https://www.mottstreetchicago.com/"
-    },
-    {
-      category: "Restaurants",
-      name: "Mott St - Chicago IL",
-      link: "https://www.mottstreetchicago.com/"
-    },
-    {
-      category: "Restaurants",
-      name: "Mott St - Chicago IL",
-      link: "https://www.mottstreetchicago.com/"
-    }
-  ]
-};

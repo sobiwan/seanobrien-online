@@ -23,18 +23,3 @@ export class MobileMenu extends React.Component {
     );
   }
 }
-
-const menuOptions = [
-  {
-    title: "Experience",
-    link: "experience"
-  },
-  {
-    title: "Honors",
-    link: "honors"
-  },
-  {
-    title: "Recommendations",
-    link: "recommendations"
-  }
-];

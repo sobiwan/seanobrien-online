@@ -76,9 +76,12 @@ export default class Profile extends React.Component {
           </div>
 
           <div className="left-sticky-cta-continaer">
-            <div className="left-sticky-cta-button">
+            <a
+              href="mailto: sean@seanobrien.email"
+              className="left-sticky-cta-button"
+            >
               Say Hello!
-            </div>
+            </a>
           </div>
         </div>
       </div>

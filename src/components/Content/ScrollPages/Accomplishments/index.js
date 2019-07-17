@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 import Bounce from "react-reveal/Bounce";
 import Sean from "../../../../resources/images/accomplishments-sean.png";
 import Forbes from "../../../../resources/images/30-under-30-image.png";
@@ -15,15 +16,25 @@ export default ({ breakPoint }) => (
         : "accomplishments-container full-ac"
     }
   >
-    <div />
+    <div className="header-accomp">
+      Honors & Recognitions
+    </div>
 
-    <img
-      id="accomplishments-seanimage"
-      alt="sean"
-      src={Sean}
-    />
+    {!isMobile && (
+      <img
+        id="accomplishments-seanimage"
+        alt="sean"
+        src={Sean}
+      />
+    )}
 
-    <div className="accomplishments-grid">
+    <div
+      className={
+        isMobile
+          ? "accomplishments-grid mobile-ag"
+          : "accomplishments-grid"
+      }
+    >
       {accomplishmentItems.map(item => {
         return (
           <Bounce bottom>
@@ -31,9 +42,14 @@ export default ({ breakPoint }) => (
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="accomplishments-item"
+              className={
+                isMobile
+                  ? "accomplishments-item mobile-ai"
+                  : "accomplishments-item"
+              }
               style={
-                item.margin && { marginTop: item.margin }
+                item.margin &&
+                !isMobile && { marginTop: item.margin }
               }
             >
               <div

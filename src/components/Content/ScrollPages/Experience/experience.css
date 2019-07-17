@@ -10,6 +10,20 @@
   align-items: center;
 }
 
+.header-exp {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 65vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 1.6em;
+  color: #444444;
+}
+
 .experience-footer {
   font-family: "Hind", sans-serif;
   font-size: 0.7em;

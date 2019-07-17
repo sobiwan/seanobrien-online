@@ -1,6 +1,5 @@
 import React from "react";
 import "./content.css";
-import { Menubar } from "./Menubar";
 import StartView from "./ScrollPages/StartView/index";
 import Experience from "./ScrollPages/Experience/index";
 import Accomplishments from "./ScrollPages/Accomplishments";
@@ -15,7 +14,6 @@ export default class Content extends React.Component {
           breakPoint ? "container break" : "container full"
         }
       >
-        {!breakPoint && <Menubar />}
         <span>
           {!breakPoint && (
             <StartView

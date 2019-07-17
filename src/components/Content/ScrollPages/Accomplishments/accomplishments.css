@@ -16,6 +16,21 @@
   height: 70vh;
 }
 
+.header-accomp {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 65vw;
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 1.6em;
+  color: #a7a7a7;
+}
+
 #accomplishments-seanimage {
   position: absolute;
   bottom: 0;
@@ -30,6 +45,10 @@
   justify-content: space-around;
 }
 
+.mobile-ag {
+  flex-wrap: wrap;
+}
+
 .accomplishments-item {
   max-width: 150px;
   display: flex;
@@ -40,6 +59,10 @@
   text-decoration: none;
   color: #ffffffc5;
   line-height: 1em;
+}
+
+.mobile-ai {
+  padding: 20px 0;
 }
 
 .accomplishments-image {

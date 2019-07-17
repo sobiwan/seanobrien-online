@@ -28,7 +28,7 @@ export default function Experience(props) {
       style={props.breakPoint ? { height: "100%" } : null}
       className={"experience-container"}
     >
-      <div />
+      <div className="header-exp">My Experience</div>
       {showMenu && (
         <ExperienceMenu
           showMenu={showMenu}

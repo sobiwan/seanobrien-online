@@ -10,7 +10,10 @@ export default ({ breakPoint }) => (
         : "starting-view-container full-scv"
     }
   >
-    <div />
+    <div className="header-sv">
+      Welcome to my site! <span> scroll down </span> to
+      learn more about me!
+    </div>
     <img id="sean-menu-image" alt="sean" src={Sean} />
   </div>
 );

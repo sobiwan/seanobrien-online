@@ -8,8 +8,23 @@
   position: relative;
 }
 
+.header-rec {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 65vw;
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 1.6em;
+  color: #444444;
+}
+
 .recs-content-container {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .recs-header {
