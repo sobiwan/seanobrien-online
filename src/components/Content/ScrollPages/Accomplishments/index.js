@@ -1,6 +1,5 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
-import Menubar from "../../Menubar";
 import Sean from "../../../../resources/images/accomplishments-sean.png";
 import Forbes from "../../../../resources/images/30-under-30-image.png";
 import Eagle from "../../../../resources/images/eaglescout-image.png";
@@ -16,7 +15,7 @@ export default ({ breakPoint }) => (
         : "accomplishments-container full-ac"
     }
   >
-    <Menubar />
+    <div />
 
     <img
       id="accomplishments-seanimage"

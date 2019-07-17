@@ -1,10 +1,9 @@
 import React from "react";
-import Menubar from "../../Menubar";
 import "./recommendations.css";
 
 export default () => (
   <div className="recommendations-container">
-    <Menubar />
+    <div />
     <div className="recs-content-container">
       <div className="recs-header">
         These are few of my favorite things ...

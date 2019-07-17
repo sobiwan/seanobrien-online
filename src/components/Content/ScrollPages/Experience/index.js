@@ -7,7 +7,6 @@ import LightSpeed from "react-reveal/LightSpeed";
 import IrishBeef from "../../../../resources/images/irishbeef.png";
 import Mavely from "../../../../resources/images/mavely.png";
 import Swyft from "../../../../resources/images/swyft.png";
-import Menubar from "../../Menubar";
 import mavelyContent from "./experience-data/mavely-content";
 import swyftContent from "./experience-data/swyft-content";
 import irishbeefContent from "./experience-data/irishbeef-content";
@@ -29,7 +28,7 @@ export default function Experience(props) {
       style={props.breakPoint ? { height: "100%" } : null}
       className={"experience-container"}
     >
-      <Menubar />
+      <div />
       {showMenu && (
         <ExperienceMenu
           showMenu={showMenu}

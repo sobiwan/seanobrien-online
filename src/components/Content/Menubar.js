@@ -1,7 +1,18 @@
 import React from "react";
 import "./content.css";
 
-export default class Menubar extends React.Component {
+export class Menubar extends React.Component {
+  render() {
+    return (
+      <div className="menubar-container">
+        Welcome to my site! <span> scroll down </span> to
+        learn more about me!
+      </div>
+    );
+  }
+}
+
+export class MobileMenu extends React.Component {
   render() {
     return (
       <div className="menubar-container">
@@ -12,3 +23,18 @@ export default class Menubar extends React.Component {
     );
   }
 }
+
+const menuOptions = [
+  {
+    title: "Experience",
+    link: "experience"
+  },
+  {
+    title: "Honors",
+    link: "honors"
+  },
+  {
+    title: "Recommendations",
+    link: "recommendations"
+  }
+];
