@@ -31,7 +31,7 @@ export default {
       icon: (
         <FaMoneyCheckAlt color={swyftcolor} size="2em" />
       ),
-      text: "Acquired Monotype 2015"
+      text: "Acquired in 2015 by Monotype"
     },
     {
       icon: <FaAd color={swyftcolor} size="2em" />,

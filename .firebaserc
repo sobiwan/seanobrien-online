@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "seanobrien-online"
+    "default": "seanobrien-online",
+    "PROD": "seanobrien-online"
   }
 }

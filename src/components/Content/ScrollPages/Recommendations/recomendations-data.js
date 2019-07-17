@@ -28,10 +28,17 @@ export default {
   music: [
     {
       category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
+      name:
+        "Testpilot & Deadmau5 - BBC Radio 1 Essential Mix (03-22-19)",
       link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
+        "https://soundcloud.com/prydateerpodcast/testpilot-deadmau5-bbc-radio-1-essential-mix-03-22-19"
     },
+    {
+      category: "Music",
+      name: "SHIBA SAN in The Lab LA",
+      link: "https://www.youtube.com/watch?v=TQoDUuvu3_c"
+    },
+
     {
       category: "Music",
       name: "Windows 95 on Acid - Spencer Brown",
@@ -40,15 +47,9 @@ export default {
     },
     {
       category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
+      name: "Avengers Soundtrack - Ultimate Cut",
       link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
-    },
-    {
-      category: "Music",
-      name: "Windows 95 on Acid - Spencer Brown",
-      link:
-        "https://soundcloud.com/spencerbrownofficial/windows-95-on-acid-mau5trap-clip"
+        "https://soundcloud.com/matogolf/avengers-ultimate-cut"
     }
   ],
   recipes: [

@@ -84,6 +84,10 @@ export default class Profile extends React.Component {
             </a>
           </div>
         </div>
+        <div className="left-sticky-footer">
+          This entire site was built from scratch by me -
+          hope you enjoy!
+        </div>
       </div>
     );
   }

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   text-align: left;
+  position: relative;
   /* justify-content: center; */
 }
 
@@ -58,4 +59,15 @@
   font-family: "Hind", sans-serif;
   color: #fff;
   text-decoration: none;
+}
+
+.left-sticky-footer {
+  position: absolute;
+  bottom: 0;
+  font-family: "Raleway";
+  font-size: 0.7em;
+  text-align: center;
+  border-top: 0.5px solid #a7a7a7;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }

@@ -27,7 +27,7 @@ export default {
     },
     {
       icon: <FaMoneyCheckAlt color={color} size="2em" />,
-      text: "Acquired Equicorp 2019"
+      text: "Acquired in 2019 by Equicorp"
     },
     {
       icon: <FaChartLine color={color} size="2em" />,
