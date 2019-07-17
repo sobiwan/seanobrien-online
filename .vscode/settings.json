@@ -1,0 +1,25 @@
+{
+  "editor.rulers": [80],
+  "files.exclude": {
+    "**/.git": true,
+    // "**/node_modules": true,
+    "**/build": true,
+    "**/vendor": true,
+    "**/android": true
+  },
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "eslint.enable": true,
+  "cSpell.words": [
+    "Equicorp",
+    "afftrack",
+    "irishbeef",
+    "lacolombe",
+    "leftgutter",
+    "mavelycolor",
+    "mavelyview",
+    "noreferrer",
+    "rightgutter",
+    "swyftcolor"
+  ]
+}

@@ -1,0 +1,20 @@
+.loading-container{
+    height: 100vh;
+    z-index: 999999;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#loadinglogo {
+    font-family: 'Oleo Script Swash Caps', cursive !important;
+    font-size: 4em;
+    color: #ff3366;
+}
+
+.heart-gif{
+    width: 77px;
+    height: 77px;
+}
